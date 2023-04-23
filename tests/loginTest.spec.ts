@@ -13,6 +13,7 @@ test("Login test demo", async () => {
     await page.click("input[value='Login']");
     await page.waitForTimeout(5000);
 
+//demonstration of loading a new chrome browser with a completly new tab 
     const context1 = await browser.newContext();
     const page1 = await context1.newPage();
     await page1.goto('https://ecommerce-playground.lambdatest.io/index.php?route=account/account');
